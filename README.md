@@ -1,12 +1,14 @@
-# prepare
+# Prepare
 https://huggingface.co/CompVis/stable-diffusion-v-1-4-original
 
 Download sd-v1-4.ckpt (~4 GB) on that page and save it as models/ldm/stable-diffusion-v1/model.ckpt in the directory you created above.
 
-# how to run
+# How to run
 gco apple-silicon-mps-support
 
 source venv/bin/activate
+
+pip install -r requirements.txt
 
 python scripts/txt2img.py \
   --prompt "a red juicy apple floating in outer space, like a planet" \
